@@ -37,7 +37,7 @@ RUN wget -q -O mambaforge.sh \
     bash mambaforge.sh -p ${CONDA_DIR} -b && \
     rm mambaforge.sh
 
-COPY ./tools/gitpod/workspace_config /usr/local/bin/workspace_config
+COPY ./support/gitpod/config /usr/local/bin/workspace_config
 
 RUN chmod a+rx /usr/local/bin/workspace_config && \
     workspace_config
